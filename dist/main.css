@@ -261,11 +261,17 @@ button {
 .row-footer i.fa {
     font-size: .8rem;
 }
+.row-footer a {
+    color: #adadad;
+}
+.row-footer a:hover {
+    color: var(--third-color); 
+}
 
 
 /* SERVICES PAGE */
 #service-main{
-    padding-bottom: 3rem;
+    padding: 2.5rem 0;
  
 }
 #service-main .primary-text {
