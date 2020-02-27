@@ -59,7 +59,7 @@ nav a:hover {
 nav ul{
     list-style: none;
     text-align: right;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 } 
@@ -183,6 +183,7 @@ button {
 }
 #info .row4 h2 {
     color: #fff;
+    letter-spacing: 1px;
 }
 #info .row4 {
     padding: 2.3rem;
@@ -255,7 +256,12 @@ button {
     padding: 2rem;
     background: var(--primary-color);
     text-align: center;
+    color: #adadad;
 }
+.row-footer i.fa {
+    font-size: .8rem;
+}
+
 
 /* SERVICES PAGE */
 #service-main{
@@ -287,26 +293,28 @@ button {
     margin: auto;
 }
 
-#service2 {
-    padding: 2rem 0 5rem 0;
+.service2 {
+    padding: 2rem 0 2rem 0;
 }
-#service2 p {
+.service2 p {
     color: #555; 
 }
-#service2 .primary-text {
+.service2 .primary-text {
     font-size: 2rem;
 }
-#service2 a {
+.service2 a {
     color: var(--primary-color);
     text-transform: capitalize;
 }
-#service2 a:hover {
+.service2 a:hover {
     color: var(--third-color);
     text-decoration: underline;
 }
-#list-services li {
-    border: solid green;
+.service2 .row2 {
+    padding-top: 5;
+    margin: 5rem 0;
 }
+
 
 /* ABOUT PAGE */
 /* services & about & contact */
@@ -347,8 +355,12 @@ button {
 .row-about-img img{
     display: block;
     width: 100%;
-    box-shadow: 2px 2px 5px rgb(54, 54, 54);
-  
+    box-shadow: 2px 2px 5px #424242;
+    cursor: pointer;
+    transition: all .5s;
+}
+.row-about-img img:hover {
+    opacity: 0.9;
 }
 .row-about-img .img-about-bottom {
     width: 50%;
@@ -365,13 +377,20 @@ button {
     box-shadow: 1px 1px 5px #979797;
 }
 .form-group input , textarea , button[type="submit"] {
-    border-radius: 5px;
+    border: 0;
+    border-bottom: solid 2px var(--third-color);
     width: 50%;
-    padding: .5rem .2rem;
+    padding: .6rem .2rem;
+    outline: none;
     margin: 0 auto 1.5rem auto;
+}
+.form-group button {
+    border-bottom: none;
 }
 .form-group label {
     display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
     width: 50%;
     padding: 0;
     margin: 0 auto;
@@ -379,11 +398,16 @@ button {
 }
 .form-group textarea {
     padding: 2.5rem .2rem;
+    border: solid 1px;
+    border-radius: 5px;
 }
 
-#services2 .contact-btm {
+.contact-btm {
     margin: 2rem 0;
     padding: 3rem 0;
+}
+.contact-btm p {
+    color: #555;
 }
 
 /**   MEDIA QUERY  **/
