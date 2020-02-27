@@ -1,0 +1,22 @@
+{
+  "name": "build-template",
+  "version": "1.0.0",
+  "description": "Web template marketing",
+  "main": "index.js",
+  "homepage": "https://Sofiane-Bekkari.github.io/Marketing-tempalet-web",
+  "scripts": {
+    "deploy": " gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofiane-Bekkari/Marketing-tempalet-web.git"
+  },
+  "author": "Sofiane Bekkari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sofiane-Bekkari/Marketing-tempalet-web/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
